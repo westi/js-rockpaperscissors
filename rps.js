@@ -23,8 +23,8 @@ var compChoice = getCompChoice();
 var userChoice = prompt("Choose rock, paper, or scissors:");
 
 if ( userChoice == "rock" || userChoice == "paper" || userChoice == "scissors" ) {
+	return alert("Awesome!");
+} else {
 	alert("Choose either 'rock', 'paper', or 'scissors'.");
 	return false;
-} else {
-
 }
