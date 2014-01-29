@@ -38,10 +38,16 @@ function youLose () {
 	return true;
 }
 
+// Tie
+function tie () {
+	alert("It's a tie! The computer also chose " + compChoice + ". The score is " + userWins + " to " + compWins + ".");
+	return true;
+}
+
 // Main if statement
 if ( userChoice == "rock" || userChoice == "paper" || userChoice == "scissors" ) {
 	if (userChoice == compChoice) {
-		youWin();
+		tie();
 	}
 	else if (userChoice == "rock") {
 		if (compChoice == "paper") {
