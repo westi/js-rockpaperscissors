@@ -5,10 +5,11 @@ var userChoice = null;
 var compChoice = null;
 
 function getCompChoice () {
-	// Returns a random integer between min and max
-	if (return Math.floor(Math.random() * 3) == 0) {
+	// Returns rock, paper, or scissors randomly
+	var randomInt = Math.floor(Math.random() * 3);
+	if (randomInt == 0) {
 		return "rock";
-	} else if (return Math.floor(Math.random() * 3) == 1) {
+	} else if (randomInt == 1) {
 		return "paper";
 	} else {
 		return "scissors";
