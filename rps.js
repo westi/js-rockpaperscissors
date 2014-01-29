@@ -27,14 +27,14 @@ var userChoice = prompt("Choose rock, paper, or scissors:");
 // If user wins
 function youWin () {
 	userWins++;
-	alert("You win! The computer chose " + compChoice + ".");
+	alert("You win! The computer chose " + compChoice + ". The score is " + userWins + " to " + compWins + ".");
 	return true;
 }
 
 // If user loses
 function youLose () {
 	compWins++;
-	alert("You lose! The computer chose " + compChoice + ".");
+	alert("You lose! The computer chose " + compChoice + ". The score is " + userWins + " to " + compWins + ".");
 	return true;
 }
 
