@@ -3,6 +3,8 @@
 // Initialize variables
 var userChoice = null;
 var compChoice = null;
+var userWins = 0;
+var compWins = 0;
 
 // Returns rock, paper, or scissors randomly
 function getCompChoice () {
@@ -24,12 +26,14 @@ var userChoice = prompt("Choose rock, paper, or scissors:");
 
 // If user wins
 function youWin () {
+	userWins++;
 	alert("You win! The computer chose " + compChoice + ".");
 	return true;
 }
 
 // If user loses
 function youLose () {
+	compWins++;
 	alert("You lose! The computer chose " + compChoice + ".");
 	return true;
 }
