@@ -32,14 +32,15 @@ function youLose() {
 }
 
 // Tie
-    function tie() {
+function tie() {
     alert("It's a tie! The computer also chose " + compChoice + ". The score is " + userWins + " to " + compWins + ".");
     return true;
 }
 
-    function rps() {
+// Main game function
+function rps() {
         
-    // Main while loop
+    // Loop game if user wants
     while (keepPlaying === true) {
 
         // Set compChoice
@@ -48,7 +49,7 @@ function youLose() {
         // Set userChoice
         var userChoice = prompt("Choose rock, paper, or scissors:");
 
-        // Main if statement
+        // Find the winner!
         if (userChoice == "rock" || userChoice == "paper" || userChoice == "scissors") {
             if (userChoice == compChoice) {
                 tie();
@@ -72,6 +73,7 @@ function youLose() {
                 }
             }
         } else {
+            // User entry non-valid
             alert("Choose either rock, paper, or scissors.");
             return false;
         }
