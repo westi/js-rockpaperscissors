@@ -34,6 +34,7 @@ function youLose () {
 	return true;
 }
 
+// Main if statement
 if ( userChoice == "rock" || userChoice == "paper" || userChoice == "scissors" ) {
 	if (userChoice == compChoice) {
 		youWin();
@@ -50,7 +51,7 @@ if ( userChoice == "rock" || userChoice == "paper" || userChoice == "scissors" )
 		} else {
 			youLose();
 		}
-	} else { // user chose scissors
+	} else {
 		if (compChoice == "rock") {
 			youLose();
 		} else {
