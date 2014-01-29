@@ -4,8 +4,8 @@
 var userChoice = null;
 var compChoice = null;
 
+// Returns rock, paper, or scissors randomly
 function getCompChoice () {
-	// Returns rock, paper, or scissors randomly
 	var randomInt = Math.floor(Math.random() * 3);
 	if (randomInt == 0) {
 		return "rock";
