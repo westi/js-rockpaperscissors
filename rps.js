@@ -24,13 +24,13 @@ var userChoice = prompt("Choose rock, paper, or scissors:");
 
 // If user wins
 function youWin () {
-	alert("You win!");
+	alert("You win! The computer chose " + compChoice + ".");
 	return true;
 }
 
 // If user loses
 function youLose () {
-	alert("You lose!");
+	alert("You lose! The computer chose " + compChoice + ".");
 	return true;
 }
 
