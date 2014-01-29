@@ -22,34 +22,39 @@ var compChoice = getCompChoice();
 // Set userChoice
 var userChoice = prompt("Choose rock, paper, or scissors:");
 
+// If user wins
+function youWin () {
+	alert("You win!");
+	return true;
+}
+
+// If user loses
+function youLose () {
+	alert("You lose!");
+	return true;
+}
+
 if ( userChoice == "rock" || userChoice == "paper" || userChoice == "scissors" ) {
 	if (userChoice == compChoice) {
-		alert("Tie!");
-		return true;
+		youWin();
 	}
 	else if (userChoice == "rock") {
 		if (compChoice == "paper") {
-			alert("You lose!");
-			return true;
+			youLose();
 		} else {
-			alert("You win!");
-			return true;
+			youWin();
 		}
 	} else if (userChoice == "paper") {
 		if (compChoice == "rock") {
-			alert("You win!");
-			return true;
+			youWin();
 		} else {
-			alert("You lose!");
-			return true;
+			youLose();
 		}
 	} else { // user chose scissors
 		if (compChoice == "rock") {
-			alert("You lose!");
-			return true;
+			youLose();
 		} else {
-			alert("You win!");
-			return true;
+			youWin();
 		}
 	}
 } else {
