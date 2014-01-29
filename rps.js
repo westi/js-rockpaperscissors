@@ -21,3 +21,10 @@ var compChoice = getCompChoice();
 
 // Set userChoice
 var userChoice = prompt("Choose rock, paper, or scissors:");
+
+if ( userChoice != "rock" || userChoice != "paper" || userChoice != "scissors" ) {
+	alert("Choose either 'rock', 'paper', or 'scissors'.");
+	return false;
+} else {
+
+}
