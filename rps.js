@@ -20,6 +20,7 @@ function getCompChoice() {
 // If user wins
 function youWin() {
     userWins++;
+    document.getElementById("user-score").innerHTML=userWins;
     alert("You win! The computer chose " + compChoice + ". The score is " + userWins + " to " + compWins + ".");
     return true;
 }
@@ -27,6 +28,7 @@ function youWin() {
 // If user loses
 function youLose() {
     compWins++;
+    document.getElementById("comp-score").innerHTML=compWins;
     alert("You lose! The computer chose " + compChoice + ". The score is " + userWins + " to " + compWins + ".");
     return true;
 }
