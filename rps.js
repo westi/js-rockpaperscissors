@@ -15,3 +15,9 @@ function getCompChoice () {
 		return "scissors";
 	}
 }
+
+// Set compChoice
+var compChoice = getCompChoice();
+
+// Set userChoice
+var userChoice = prompt("Choose rock, paper, or scissors:");
