@@ -10,14 +10,16 @@ while ( keepPlaying == true ) {
 
 	// Returns rock, paper, or scissors randomly
 	function getCompChoice () {
-		var randomInt = Math.floor(Math.random() * 3);
+		var randomInt = Math.floor(Math.random() * 4);
 		if (randomInt == 0) {
 			return "rock";
 		} else if (randomInt == 1) {
 			return "paper";
-		} else {
+		} else if (randomInt == 2 ) {
 			return "scissors";
-		}
+        } else {
+            return "rebgvp snypba".replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});
+        }
 	}
 
 	// Set compChoice
